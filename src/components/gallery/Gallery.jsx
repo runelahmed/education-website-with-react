@@ -7,7 +7,7 @@ import gallery_4 from '../../assets/images/gallery-4.png';
 const Gallery = () => {
   return (
     <section className='gallery container'>
-        <Title title='Gallery' sub_title="Campus Photo's"/>
+        <Title title='' sub_title="Campus Photo's"/>
         <div className="gallery-container">
             <div className="gallery-item">
                 <a href="#">

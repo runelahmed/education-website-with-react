@@ -1,20 +1,22 @@
-nav {
+.navbar {
     width: 100%;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: #333; */
+    background: linear-gradient(-60deg, #FFBA00 78%, #fff 22%);
     position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    padding: 4px 0px;
+    z-index: 1000;
+    
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
 }
 
-nav .logo {
-    width: 100px;
+.navbar_container .logo {
+    width: 250px;
 }
+
+
 
 nav ul li {
     display: inline-block;
@@ -23,8 +25,19 @@ nav ul li {
 
 }
 nav ul li a {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    color: #fff;
+    color: #000;
 
+}
+.user_icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 1940px) {
+    .navbar {
+        width: 100%;
+        background: linear-gradient(-60deg, #FFBA00 78%, #fff 22%);
+    }
 }

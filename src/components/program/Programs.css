@@ -1,18 +1,39 @@
+.programs {
+    margin: 80px 0px;
+}
 .programs_container{
-    margin: 80px auto;
-    width: 90%;
+    margin: 50px auto;
+    width: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    border-bottom: 4px solid var(--primary-color);
+    padding-bottom: 80px;
+
 }
-.programs_container .program_card{
-position: relative;
+
+.program_card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced out */
 }
-.programs_container .program_card .program_img{
+
+.program_card .program_card_img {
+    height: 250px; /* Fixed height for the image container */
+    position: relative;
+    overflow: hidden;
+}
+
+.programs_container .program_card .program_card_img .program_img {
     width: 100%;
-    border-radius: 10px;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 5px;
+   
 }
 
 .caption {
@@ -34,13 +55,36 @@ position: relative;
     transition: 0.4s;
 }
 
-.caption .caption_img{
+.caption .caption_img {
     width: 60px;
     margin-bottom: 10px;
 }
 
-.program_card:hover  .caption{
+.program_card_img:hover .caption {
     opacity: 1;
     padding-top: 0;
 }
 
+.program_card_text {
+    display: flex;
+    flex-direction: column;
+    background: #f3f3f3;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.program_card_text p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.read_more_button .dark_arrow {
+    margin-left: 30px;
+    width: 30px;
+}
+
+.masters {
+    border: none;
+    padding-bottom: 30px;
+}
