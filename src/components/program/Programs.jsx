@@ -10,7 +10,7 @@ import program_icon_3 from '../../assets/images/program-icon-3.png'
 const Programs = () => {
   return (
     <section className='container'>
-        <Title/>
+        <Title title='Our Program' sub_title='What We Offer'/>
       <div className="programs_container">
         <div className="program_card">
             <img src={program_1} alt="" className="program_img" />
