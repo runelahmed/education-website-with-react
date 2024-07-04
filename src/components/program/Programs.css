@@ -7,7 +7,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 20px;
     border-bottom: 4px solid var(--primary-color);
     padding-bottom: 80px;
 
@@ -15,7 +15,7 @@
 
 .program_card {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    padding: 20px;
+    padding: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -64,24 +64,27 @@
     opacity: 1;
     padding-top: 0;
 }
-
+.sub_title_programs{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
 .program_card_text {
     display: flex;
     flex-direction: column;
     background: #f3f3f3;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .program_card_text p {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 20px;
     line-height: 1.4;
 }
 
 .read_more_button .dark_arrow {
-    margin-left: 30px;
-    width: 30px;
+    margin-left: 10px;
+    width: 20px;
 }
 
 .masters {

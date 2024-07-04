@@ -3,7 +3,6 @@
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../../assets/images/ulemisty_banner.jpg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     position: relative;
@@ -13,7 +12,7 @@
 }
 
 .showcase_title{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 700;
     position: absolute;
     right: 48px;
@@ -23,7 +22,7 @@
 
 }
 .showcase_sub_title{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     position: absolute;
     right: 48px;
@@ -45,12 +44,12 @@
     justify-content: space-between;
 }
 .showcase_content div h3 {
-    font-size: 45px;
+    font-size: 34px;
     color: var(--primary-color);
     margin-bottom: 10px;
 }
 .showcase_content div p {
-    font-size: 36px;
+    font-size: 30px;
     color: #fff;
 }
 .showcase_bottom_side{

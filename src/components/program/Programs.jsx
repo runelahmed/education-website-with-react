@@ -1,5 +1,6 @@
-import {FaArrowRight, FaLongArrowAltRight} from 'react-icons/fa'
+
 import './Programs.css';
+import { Link } from 'react-router-dom';
 import program_1 from '../../assets/images/program_1.jpg'
 import program_2 from '../../assets/images/program_2.jpg'
 import program_3 from '../../assets/images/program_3.jpg'
@@ -14,10 +15,10 @@ const Programs = () => {
   return (
     <>
     <section className='programs container'>
-    <h2 className="sub_title">Undergraduate Programs</h2> 
+    <h2 className="sub_title_programs">Undergraduate Programs</h2> 
     <div className="programs_container">
     <div className="program_card">
-        <a href="#">
+        <Link to="#">
         <div className='program_card_img'>
           <img src={program_1} alt="" className="program_img" />
           <div className="caption">
@@ -26,18 +27,18 @@ const Programs = () => {
           </div>
         </div>
         <div className="program_card_text">
-        <h2 className="sub_title">Creativity and Business Innovation</h2>
+        <h2 className="sub_title_programs">Creativity and Business Innovation</h2>
         <div className=''>
           <p>Bachelor’s Degree (BA) <br /> Field of study: Business and Administration<br />Tallinn<br />3 Years, full-time <br />Credits: 180 ECTS <br />Tuition fee per year: 7120 € (EU) /<br /> 7520 € (non-EU)<br /> </p>   
         </div>
         <div className='read_more_button'>
-        <a href="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
+        <a to="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
         </div>
         </div>
-        </a>
+        </Link>
       </div>
       <div className="program_card">
-        <a href="#">
+        <a to="#">
         <div className='program_card_img'>
           <img src={program_2} alt="" className="program_img" />
           <div className="caption">
@@ -46,18 +47,18 @@ const Programs = () => {
           </div>
         </div>
         <div className="program_card_text">
-        <h2 className="sub_title">Creativity and Business Innovation</h2>
+        <h2 className="sub_title_programs">Creativity and Business Innovation</h2>
         <div className=''>
           <p>Bachelor’s Degree (BA) <br /> Field of study: Business and Administration<br />Tallinn<br />3 Years, full-time <br />Credits: 180 ECTS <br />Tuition fee per year: 7120 € (EU) /<br /> 7520 € (non-EU)<br /> </p>   
         </div>
         <div className='read_more_button'>
-        <a href="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
+        <a to="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
         </div>
         </div>
         </a>
       </div>
       <div className="program_card">
-        <a href="#">
+        <a to="#">
         <div className='program_card_img'>
           <img src={program_3} alt="" className="program_img" />
           <div className="caption">
@@ -66,18 +67,18 @@ const Programs = () => {
           </div>
         </div>
         <div className="program_card_text">
-        <h2 className="sub_title">Software Development</h2>
+        <h2 className="sub_title_programs">Software Development</h2>
         <div className=''>
           <p>Bachelor’s Degree (BA) <br /> Field of study: Business and Administration<br />Tallinn<br />3 Years, full-time <br />Credits: 180 ECTS <br />Tuition fee per year: 7120 € (EU) /<br /> 7520 € (non-EU)<br /> </p>   
         </div>
         <div className='read_more_button'>
-        <a href="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
+        <a to="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
         </div>
         </div>
         </a>
       </div>
       <div className="program_card">
-        <a href="#">
+        <a to="#">
         <div className='program_card_img'>
           <img src={program_4} alt="" className="program_img" />
           <div className="caption">
@@ -86,12 +87,12 @@ const Programs = () => {
           </div>
         </div>
         <div className="program_card_text">
-        <h2 className="sub_title">Game Design and Development</h2>
+        <h2 className="sub_title_programs">Game Design and Development</h2>
         <div className=''>
           <p>Bachelor’s Degree (BA) <br /> Field of study: Business and Administration<br />Tallinn<br />3 Years, full-time <br />Credits: 180 ECTS <br />Tuition fee per year: 7120 € (EU) /<br /> 7520 € (non-EU)<br /> </p>   
         </div>
         <div className='read_more_button'>
-        <a href="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
+        <a to="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
         </div>
         </div>
         </a>
@@ -103,7 +104,7 @@ const Programs = () => {
       <h2 className="sub_title">Master&apos;s Programs</h2> 
       <div className="programs_container masters">
       <div className="program_card">
-          <a href="#">
+          <a to="#">
           <div className='program_card_img'>
             <img src={program_5} alt="" className="program_img" />
             <div className="caption">
@@ -112,12 +113,12 @@ const Programs = () => {
             </div>
           </div>
           <div className="program_card_text">
-          <h2 className="sub_title">International Business Administration</h2>
+          <h2 className="sub_title_programs">International Business Administration</h2>
           <div className=''>
             <p>Master&apos;s Degree (MBA) <br /> Field of study: Business and Administration<br />Tallinn<br />2 Years, full-time <br />Credits: 120 ECTS <br />Tuition fee per year: 7120 € (EU) /<br /> 7520 € (non-EU)<br /> </p>   
           </div>
           <div className='read_more_button'>
-          <a href="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
+          <a to="#" className='btn_primary'>Read more and apply <img className='dark_arrow' src={dark_arrow} alt="" /></a>
           </div>
           </div>
           </a>
