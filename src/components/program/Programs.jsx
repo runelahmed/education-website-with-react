@@ -1,5 +1,4 @@
 
-import './Programs.css';
 import { Link } from 'react-router-dom';
 import program_1 from '../../assets/images/program_1.jpg'
 import program_2 from '../../assets/images/program_2.jpg'

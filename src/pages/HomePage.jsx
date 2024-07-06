@@ -1,15 +1,20 @@
-import Hero from '../components/hero/Hero'
-import Programs from '../components/program/Programs'
-import ShowCase from '../components/showcase/ShowCase'
-import Testimonial from '../components/testimonial/Testimonial'
+import HomePageHero from "../components/hero/HomePageHero";
+import HomePagePrograms from "../components/program/HomePagePrograms";
+import ShowCase from "../components/showcase/ShowCase";
+import News from '../components/news/News';
+import Stories from "../components/news/Stories";
+import Partner from "../components/partner/Partner";
 
 const HomePage = () => {
   return (
     <>
-      <Hero/>
-      <Programs/>
+      <HomePageHero/>
+      <HomePagePrograms/>
+      <News/>
       <ShowCase/>
-      <Testimonial/>
+      <Stories/>
+      <Partner/>
+
     </>
   )
 }

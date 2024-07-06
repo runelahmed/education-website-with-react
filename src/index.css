@@ -7,34 +7,45 @@
 
 }
 
-body {
-  color: #000;
-}
-
-
-
-
-
-
-/* Utility Classes */
-
-.container{
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.container_lg{
-  padding-left: 12%;
-  padding-right: 12%;
-
-}
-
 :root {
-  --secondary-color: #fc5d66;
   --primary-color: #FFBA00 ;
-  --light-color: #f9fafb;
+  --white-color: #fff;
+  --light-color: #EFEFEF;
   --black-color: #000;
 }
+
+body {
+  color: var(--black-color);
+}
+
+
+
+
+
+
+/* Utility Classes for Container */
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-2xl{
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.container-xl{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-lg{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
 
 
 
@@ -49,7 +60,25 @@ a{
   cursor: pointer;
 }
 
-.btn_primary {
+.btn {
+  background-color: var(--primary-color);
+  color: #000000;
+  padding: 20px 50px;
+  font-size: 16px;
+  border-radius: 37px;
+  cursor: pointer;
+  outline: 0;
+  font-weight: regular;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #ffc62f;
+}
+
+.btn-primary {
   background-color: #fff;
   color: #000000;
   padding: 10px 20px;
@@ -63,7 +92,8 @@ a{
   align-items: center;
   text-transform: uppercase;
 }
-.btn_primary:hover {
+
+.btn-primary:hover {
   background-color: rgba(73, 90, 241, 0.3);
   color: #000000;
   border: 1px solid #000000;
@@ -72,28 +102,74 @@ a{
 }
 
 
-.btn_dark {
-  background-color: #212121;
-  color: #fff;
-  padding: 14px 25px;
-  font-size: 20px;
+.btn-secondary {
+  background-color: #fff;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
-  border: 0;
+  border: 1px solid #000;
   outline: 0;
-  display: inline-flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   align-items: center;
+  text-transform: uppercase;
 }
-.sub_title{
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #000;
+  border: 1px solid #000000;
+  transition: 0.4s;
+  
+}
+
+/* Utility Classes for fontSize */
+
+.text-base {
+font-size: 1rem; /* 16px */
+line-height: 1.5rem; /* 24px */
+}
+
+.text-lg{
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}	
+.text-xl{
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}	
+.text-2xl{
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}	
+.text-3xl{
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}	
+.text-4xl{
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+}	
+.text-5xl{
+  font-size: 3rem; /* 48px */
+  line-height: 1;
+}	
+
+
+.sub-title{
 font-size: 30px;
-margin: 30px 0px;
+margin-bottom: 10px;
 }
-.text_regular{
+
+.text-regular{
   font-size: 23px;
   color: #000000;
 }
-.text_bold{
+
+.text-bold{
   font-size: 23px;
   font-weight: bold;
 }
+
